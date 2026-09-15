@@ -1,0 +1,17 @@
+<input type="text" id="myInput">
+<button id="myButton">Submit</button>
+<p id="displayText"></p>
+
+<script>
+document.getElementById('myInput').oninput = function() {
+  var input = document.getElementById('myInput').value;
+  var displayText = document.getElementById('displayText');
+  displayText.innerHTML = input;
+  displayText.style.fontSize = (16 + input.length * 4) + 'px';
+}
+
+document.getElementById('myButton').onclick = function() {
+  var input = document.getElementById('myInput').value;
+  document.getElementById('displayText').innerHTML = input;
+}
+</script>
