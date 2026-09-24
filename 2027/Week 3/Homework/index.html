@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <title>Treasure Hunt</title>
+  <style>
+    button { width: 60px; height: 60px; font-size: 20px; margin: 2px; }
+  </style>
 </head>
 <body>
-
-  <main class="map">
-    <h1>X Marks the Spot</h1>
-
-    <div class="grid" id="grid"></div>
-
-    <p class="status" id="status" aria-live="polite">&nbsp;</p>
-
-    <button class="again" id="again" hidden>Bury the treasure again</button>
-  </main>
-
+ 
+  <h1>Find the Treasure</h1>
+  <div id="grid"></div>
+  <p id="message"></p>
+  <button id="restart" style="display:none">Play Again</button>
+ 
   <script src="script.js"></script>
+ 
 </body>
 </html>
+ 
